@@ -1,0 +1,88 @@
+
+body {
+	font-family: Muli;
+}
+.row {
+	width: 960px;
+	margin : 10px auto;
+}
+
+.row > div {
+    float : left;
+    margin : 10px 10px;
+}
+
+.col-4 { width : 280px;
+		height: 50px;
+		background-color: lightgrey;
+		border: 1px solid grey; 
+}
+
+@media only screen and (min-width:500px) and (max-width:920px) {
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 0.5%;
+    }
+    
+    .col-4 { width : 30%; 
+    }
+ }
+@media only screen and (max-width:500px) {
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 1%;
+    }
+    .col-4 { 
+        width : 98%; 
+        float : none;
+    }
+}
+
+.transition {
+	margin-top: 280px;
+	position: relative;
+}
+
+.transition > div {
+	width: 200px auto;
+	height: 100px;
+	background-color: lime;
+	transition: background-color 1s ease-in-out 1s;
+}
+.transition > div:hover {
+	background-color: blue;
+}
+
+.btn{
+  position: relative;
+  width: 180px;
+  background-color: lightgrey;
+  color: rgb(20, 20, 20);
+  text-align: center;
+ 
+}
+.my_list {
+	height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+	list-style: none;
+
+}
+.my_list li {
+	padding: 10px;
+}
+.dropdown {
+  position: relative;
+  width: 200px;
+  background-color: lightgrey;
+  color: rgb(20, 20, 20);  
+  text-align: left;
+}
+
+.dropdown:hover ul {
+  height: 110px;
+}
